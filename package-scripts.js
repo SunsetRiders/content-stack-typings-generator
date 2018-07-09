@@ -3,7 +3,7 @@ const utils = require('nps-utils');
 module.exports = {
   scripts: {
     'clear': {
-      'default': utils.rimraf('./bin')
+      'default': utils.rimraf('./lib')
     },
 
     'build': {
