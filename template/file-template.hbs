@@ -1,4 +1,9 @@
 
-export interface {{toPascalCase uid}} {
-  
+{{#each allTypes}}
+export interface {{name}} {
+  {{#each fields}}
+  {{name}}{{#if optional}}?{{/if}}: {{type}}{{#if multiple}}[]{{/if}};
+  {{/each}}
 }
+
+{{/each}}

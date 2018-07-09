@@ -1,9 +1,11 @@
 import { Configuration } from "../config";
-import { loadContentTypes, generateTypeFile, convertAllToDataType } from './task';
+import { loadContentTypes, convertAllToDataType, ContentStackTypingsGenerator } from './task';
 
 export class TypingsGenerator {
 
-  constructor(readonly config: Configuration) {
+  constructor(
+    readonly config: Configuration,
+    readonly generator: ContentStackTypingsGenerator = new ContentStackTypingsGenerator()) {
 
   }
 
@@ -12,7 +14,7 @@ export class TypingsGenerator {
     const contentTypes = await loadContentTypes(this.config);
     const library = convertAllToDataType(contentTypes.content_types);
 
-    generateTypeFile(config, library);
+    await this.generator.generateFile(config, library);
   }
 
 }

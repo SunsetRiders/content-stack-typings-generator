@@ -1,9 +1,14 @@
 
 export class DataTypeField {
   constructor(
-    public readonly name: string,
-    public readonly type: string,
-    public readonly mandatory: boolean = true) {
+    readonly name: string,
+    readonly type: string,
+    readonly mandatory: boolean = true,
+    readonly multiple: boolean = false) {
 
+  }
+
+  get optional() {
+    return !this.mandatory;
   }
 }

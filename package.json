@@ -5,20 +5,22 @@
   "license": "MIT",
   "scripts": {
     "build": "nps build.typescript",
-    "prepublish": "nps build"
+    "postinstall": "nps build"
   },
   "dependencies": {
     "@types/chalk": "^2.2.0",
     "@types/command-line-args": "^5.0.0",
     "@types/command-line-usage": "^5.0.1",
     "@types/handlebars": "^4.0.38",
-    "@types/node": "^10.5.1",
+    "@types/node": "^10.5.2",
     "@types/node-fetch": "^2.1.1",
+    "@types/shelljs": "^0.8.0",
     "chalk": "^2.4.1",
     "command-line-args": "^5.0.2",
     "command-line-usage": "^5.0.5",
     "handlebars": "^4.0.11",
     "node-fetch": "^2.1.2",
+    "shelljs": "^0.8.2",
     "tslib": "^1.9.3"
   },
   "devDependencies": {
