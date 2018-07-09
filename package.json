@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "nps build.typescript",
-    "postinstall": "nps build"
+    "build": "nps build.typescript"
   },
   "bin": {
     "cstg": "./bin/cstg.js"
