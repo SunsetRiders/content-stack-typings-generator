@@ -1,0 +1,32 @@
+{
+  "name": "content-stack-typings-generator",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "nps build.typescript"
+  },
+  "bin": {
+    "cstg": "./bin/cstg.js"
+  },
+  "dependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/command-line-args": "^5.0.0",
+    "@types/command-line-usage": "^5.0.1",
+    "@types/handlebars": "^4.0.38",
+    "@types/node": "^10.5.2",
+    "@types/node-fetch": "^2.1.1",
+    "@types/shelljs": "^0.8.0",
+    "chalk": "^2.4.1",
+    "command-line-args": "^5.0.2",
+    "command-line-usage": "^5.0.5",
+    "handlebars": "^4.0.11",
+    "node-fetch": "^2.1.2",
+    "shelljs": "^0.8.2",
+    "tslib": "^1.9.3"
+  },
+  "devDependencies": {
+    "nps": "^5.9.2",
+    "nps-utils": "^1.6.0",
+    "typescript": "^2.9.2"
+  }
+}
