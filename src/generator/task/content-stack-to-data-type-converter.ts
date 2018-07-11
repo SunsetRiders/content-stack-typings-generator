@@ -78,7 +78,7 @@ function extractTypeName(field: Field, library: DataTypeLibrary, parentType?: st
 }
 
 function createGroupType(field: GroupField, library: DataTypeLibrary, parentType: string) {
-  const typeName = `${parentType}_${toPascalCase(field.uid)}`;
+  const typeName = `${parentType}$${toPascalCase(field.uid)}`;
 
   const fields = field.schema.map(x =>
     new DataTypeField(x.uid, extractTypeName(x, library, typeName), x.mandatory, x.multiple)
