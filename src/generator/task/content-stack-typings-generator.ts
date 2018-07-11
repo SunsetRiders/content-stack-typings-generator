@@ -30,7 +30,7 @@ export class ContentStackTypingsGenerator {
   }
 
   async generateFile(config: Configuration, library: DataTypeLibrary) {
-    const rootFileName = path.resolve(config.out, `content-stack.model.ts`);
+    const rootFileName = path.resolve(config.output);
     const directory = path.dirname(rootFileName);
 
     try {

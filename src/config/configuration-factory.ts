@@ -16,7 +16,7 @@ export class ConfigurationFactory {
         optionList: [
           { name: 'apikey', description: 'The API KEY for the Content Stack' },
           { name: 'authtoken', description: 'The AUTH TOKEN for the Content Stack' },
-          { name: 'out', description: 'The output directory for the generated typings' }
+          { name: 'output', description: 'The output directory for the generated typings' }
         ]
       }
     ]);
@@ -32,7 +32,7 @@ export class ConfigurationFactory {
     const optionDefinitions = [
       { name: 'apikey', type: String },
       { name: 'authtoken', type: String },
-      { name: 'out', alias: 'o', type: String }
+      { name: 'output', alias: 'o', type: String }
     ];
 
     return <Configuration>commandLineArgs(optionDefinitions);
