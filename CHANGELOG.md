@@ -1,3 +1,9 @@
+#### 1.1.1 (2018-07-11)
+
+##### Build System / Dependencies
+
+* **cli:**  Changes weren't published in last release. (fc9e4855)
+
 ### 1.1.0 (2018-07-11)
 
 ##### Breaking Changes
