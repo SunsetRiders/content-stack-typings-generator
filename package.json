@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "nps build.typescript"
+    "build": "nps build.typescript",
+    "release:major": "nps release.major",
+    "release:minor": "nps release.minor",
+    "release:patch": "nps release.patch"
   },
   "bin": {
     "cstg": "./bin/cstg.js"
