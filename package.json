@@ -1,9 +1,12 @@
 {
   "name": "content-stack-typings-generator",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "license": "MIT",
   "scripts": {
-    "build": "nps build.typescript"
+    "build": "nps build.typescript",
+    "release:major": "nps release.major",
+    "release:minor": "nps release.minor",
+    "release:patch": "nps release.patch"
   },
   "bin": {
     "cstg": "./bin/cstg.js"
