@@ -81,7 +81,12 @@ function createGroupType(field: GroupField, library: DataTypeLibrary, parentType
   const typeName = `${parentType}$${toPascalCase(field.uid)}`;
 
   const fields = field.schema.map(x =>
-    new DataTypeField(x.uid, extractTypeName(x, library, typeName), x.mandatory, x.multiple)
+    new DataTypeField(
+      x.uid,
+      extractTypeName(x, library, typeName),
+      x.mandatory,
+      x.multiple || isReferenceField(x)
+    )
   );
 
   const typeDefinition = library.createTypeDefinition(typeName, fields);
@@ -96,7 +101,14 @@ function addToLibrary(library: DataTypeLibrary, contentType: ContentType) {
     return;
   }
 
-  const fields = contentType.schema.map(x => new DataTypeField(x.uid, extractTypeName(x, library, typeName), x.mandatory, x.multiple));
+  const fields = contentType.schema.map(
+    x => new DataTypeField(
+      x.uid,
+      extractTypeName(x, library, typeName),
+      x.mandatory,
+      x.multiple || isReferenceField(x)
+    )
+  );
 
   library.createTypeDefinition(typeName, fields);
 }
