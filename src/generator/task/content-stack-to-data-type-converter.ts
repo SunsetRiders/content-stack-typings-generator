@@ -124,6 +124,7 @@ export function convertAllToDataType(contentTypes: ContentType[]): DataTypeLibra
     new DataTypeField('title', 'string'),
     new DataTypeField('text', 'string'),
     new DataTypeField('button_label', 'string'),
+    new DataTypeField('url', 'string')
   ]);
 
   library.createTypeDefinition('Link', [
