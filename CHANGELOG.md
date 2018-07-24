@@ -1,3 +1,9 @@
+#### 1.1.4 (2018-07-24)
+
+##### Build System / Dependencies
+
+* **generator:**  Forget to build in previous release. (aa970014)
+
 #### 1.1.3 (2018-07-24)
 
 #### 1.1.2 (2018-07-17)
