@@ -117,13 +117,13 @@ export function convertAllToDataType(contentTypes: ContentType[]): DataTypeLibra
   const library = new DataTypeLibrary();
 
   library.createTypeDefinition('File', [
-    new DataTypeField('file', 'string'),
-    new DataTypeField('link', 'string'),
-    new DataTypeField('image_thumbnail', 'string'),
-    new DataTypeField('file_detail', 'string'),
+    new DataTypeField('file', 'string', false),
+    new DataTypeField('link', 'string', false),
+    new DataTypeField('image_thumbnail', 'string', false),
+    new DataTypeField('file_detail', 'string', false),
     new DataTypeField('title', 'string'),
-    new DataTypeField('text', 'string'),
-    new DataTypeField('button_label', 'string'),
+    new DataTypeField('text', 'string', false),
+    new DataTypeField('button_label', 'string', false),
     new DataTypeField('url', 'string')
   ]);
 
